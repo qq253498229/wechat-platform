@@ -1,6 +1,8 @@
 {
   "name": "wechat-platform",
   "version": "0.0.0",
+  "author": "wangbin",
+  "license": "Apache License 2.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
