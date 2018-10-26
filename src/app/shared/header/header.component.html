@@ -3,19 +3,19 @@
     <img src="assets/images/logo.png" alt="" class="header-logo">
   </li>
   <li nz-menu-item routerLink="/project" [nzSelected]="router.url.startsWith('/project')">
-    <i class="anticon anticon-appstore"></i>
+    <i nz-icon type="appstore" theme="outline"></i>
     {{ 'home.menu.project.title' | translate }}
   </li>
   <li nz-menu-item routerLink="/user" [nzSelected]="router.url.startsWith('/user')">
-    <i class="anticon anticon-user"></i>
+    <i nz-icon type="user" theme="outline"></i>
     {{ 'home.menu.user.title' | translate }}
   </li>
   <li nz-menu-item routerLink="/team" [nzSelected]="router.url.startsWith('/team')">
-    <i class="anticon anticon-team"></i>
+    <i nz-icon type="team" theme="outline"></i>
     {{ 'home.menu.team.title' | translate}}
   </li>
   <li nz-menu-item routerLink="/dashboard" [nzSelected]="router.url.startsWith('/dashboard')">
-    <i class="anticon anticon-dashboard"></i>
+    <i nz-icon type="dashboard" theme="outline"></i>
     <nz-badge nzDot>
       {{ 'home.menu.dashboard.title' | translate}}
     </nz-badge>
@@ -27,14 +27,20 @@
   <li nz-menu-item class="float-right">
     <nz-dropdown [nzPlacement]="'bottomRight'">
       <span nz-dropdown>
-        Admin <i class="anticon anticon-down"></i>
+        Admin <i nz-icon type="down" theme="outline"></i>
       </span>
       <ul nz-menu nzSelectable>
         <li nz-menu-item>
-          <a routerLink="/system/profile"><i class="anticon anticon-user"></i>&nbsp;个人信息</a>
+          <a routerLink="/system/profile">
+            <i nz-icon type="user" theme="outline"></i>
+            &nbsp;个人信息
+          </a>
         </li>
         <li nz-menu-item>
-          <a><i class="anticon anticon-logout"></i>&nbsp;注销</a>
+          <a>
+            <i nz-icon type="logout" theme="outline"></i>
+            注销
+          </a>
         </li>
       </ul>
     </nz-dropdown>
