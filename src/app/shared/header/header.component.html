@@ -1,0 +1,42 @@
+<ul nz-menu [nzMode]="'horizontal'" [nzSelectable]="false">
+  <li nz-menu-item routerLink="/index" [nzSelected]="router.url === '/index'">
+    <img src="assets/images/logo.png" alt="" class="header-logo">
+  </li>
+  <li nz-menu-item routerLink="/project" [nzSelected]="router.url.startsWith('/project')">
+    <i class="anticon anticon-appstore"></i>
+    {{ 'home.menu.project.title' | translate }}
+  </li>
+  <li nz-menu-item routerLink="/user" [nzSelected]="router.url.startsWith('/user')">
+    <i class="anticon anticon-user"></i>
+    {{ 'home.menu.user.title' | translate }}
+  </li>
+  <li nz-menu-item routerLink="/team" [nzSelected]="router.url.startsWith('/team')">
+    <i class="anticon anticon-team"></i>
+    {{ 'home.menu.team.title' | translate}}
+  </li>
+  <li nz-menu-item routerLink="/dashboard" [nzSelected]="router.url.startsWith('/dashboard')">
+    <i class="anticon anticon-dashboard"></i>
+    <nz-badge nzDot>
+      {{ 'home.menu.dashboard.title' | translate}}
+    </nz-badge>
+  </li>
+  <!--<li nz-menu-item class="float-right">
+    <i class="anticon anticon-login"></i>
+    登录
+  </li>-->
+  <li nz-menu-item class="float-right">
+    <nz-dropdown [nzPlacement]="'bottomRight'">
+      <span nz-dropdown>
+        Admin <i class="anticon anticon-down"></i>
+      </span>
+      <ul nz-menu nzSelectable>
+        <li nz-menu-item>
+          <a routerLink="/system/profile"><i class="anticon anticon-user"></i>&nbsp;个人信息</a>
+        </li>
+        <li nz-menu-item>
+          <a><i class="anticon anticon-logout"></i>&nbsp;注销</a>
+        </li>
+      </ul>
+    </nz-dropdown>
+  </li>
+</ul>
