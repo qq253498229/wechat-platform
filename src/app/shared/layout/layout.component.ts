@@ -19,7 +19,10 @@ export class LayoutComponent implements OnInit {
   ngOnInit() {
     this.service.loadObservable.subscribe(res => {
       this.loadFlag = <boolean>res;
-      this.cd.detectChanges();
+
+      if (!this.cd['destroyed']) {
+        this.cd.detectChanges();
+      }
     });
   }
 
