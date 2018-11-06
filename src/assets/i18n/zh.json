@@ -2,17 +2,20 @@
   "home": {
     "title": "主页标题",
     "menu": {
-      "project": {
-        "title": "浏览项目"
+      "menu": {
+        "title": "菜单管理"
       },
-      "user": {
-        "title": "浏览用户"
+      "message": {
+        "title": "消息管理"
       },
-      "team": {
-        "title": "浏览团队"
+      "material": {
+        "title": "素材管理"
       },
-      "dashboard": {
-        "title": "工作台"
+      "follower": {
+        "title": "用户管理"
+      },
+      "statistic": {
+        "title": "数据统计"
       }
     }
   },

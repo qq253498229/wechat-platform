@@ -2,17 +2,20 @@
   "home": {
     "title": "Index",
     "menu": {
-      "project": {
-        "title": "Project"
+      "menu": {
+        "title": "Menu"
       },
-      "user": {
-        "title": "User"
+      "message": {
+        "title": "Message"
       },
-      "team": {
-        "title": "Team"
+      "material": {
+        "title": "Material"
       },
-      "dashboard": {
-        "title": "Dashboard"
+      "follower": {
+        "title": "Follower"
+      },
+      "statistic": {
+        "title": "Statistic"
       }
     }
   },

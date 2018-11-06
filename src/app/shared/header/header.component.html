@@ -2,22 +2,26 @@
   <li nz-menu-item routerLink="/index" [nzSelected]="router.url === '/index'">
     <img src="assets/images/logo.png" alt="" class="header-logo">
   </li>
-  <li nz-menu-item routerLink="/project" [nzSelected]="router.url.startsWith('/project')">
-    <i nz-icon type="appstore" theme="outline"></i>
-    {{ 'home.menu.project.title' | translate }}
+  <li nz-menu-item routerLink="/menu" [nzSelected]="router.url.startsWith('/menu')">
+    <i nz-icon type="bars" theme="outline"></i>
+    {{ 'home.menu.menu.title' | translate }}
   </li>
-  <li nz-menu-item routerLink="/user" [nzSelected]="router.url.startsWith('/user')">
+  <li nz-menu-item routerLink="/message" [nzSelected]="router.url.startsWith('/message')">
+    <i nz-icon type="message" theme="outline"></i>
+    {{ 'home.menu.message.title' | translate }}
+  </li>
+  <li nz-menu-item routerLink="/material" [nzSelected]="router.url.startsWith('/material')">
+    <i nz-icon type="picture" theme="outline"></i>
+    {{ 'home.menu.material.title' | translate}}
+  </li>
+  <li nz-menu-item routerLink="/follower" [nzSelected]="router.url.startsWith('/follower')">
     <i nz-icon type="user" theme="outline"></i>
-    {{ 'home.menu.user.title' | translate }}
+    {{ 'home.menu.follower.title' | translate}}
   </li>
-  <li nz-menu-item routerLink="/team" [nzSelected]="router.url.startsWith('/team')">
-    <i nz-icon type="team" theme="outline"></i>
-    {{ 'home.menu.team.title' | translate}}
-  </li>
-  <li nz-menu-item routerLink="/dashboard" [nzSelected]="router.url.startsWith('/dashboard')">
-    <i nz-icon type="dashboard" theme="outline"></i>
+  <li nz-menu-item routerLink="/statistic" [nzSelected]="router.url.startsWith('/statistic')">
+    <i nz-icon type="bar-chart" theme="outline"></i>
     <nz-badge nzDot>
-      {{ 'home.menu.dashboard.title' | translate}}
+      {{ 'home.menu.statistic.title' | translate}}
     </nz-badge>
   </li>
   <!--<li nz-menu-item class="float-right">

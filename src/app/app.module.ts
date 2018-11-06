@@ -30,7 +30,8 @@ const routes: Routes = [
     path: '', component: LayoutComponent,
     children: [
       {path: '', redirectTo: '/index', pathMatch: 'full'},
-      {path: 'index', component: IndexComponent}
+      {path: 'index', component: IndexComponent},
+      {path: 'menu', loadChildren: './modules/menu/menu.module#MenuModule'}
     ]
   },
   {path: '**', component: PageNotFoundComponent}
